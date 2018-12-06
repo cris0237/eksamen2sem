@@ -1,3 +1,17 @@
 img {
     width: 500px;
 }
+
+.data-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 7fr);
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.item {
+    background: rgba(20, 40, 80, 1);
+    color: #fff;
+    padding: 10px;
+}
