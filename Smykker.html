@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="design.css">
     <title>Document</title>
 </head>
 
@@ -12,25 +13,29 @@
         <h1>Camilla</h1>
     </header>
     <main>
-        <section class="container" data-container></section>
-        <template data-template>
+        <section class="data-container"></section>
+        <template class="data-template">
             <article class="postListview">
-             <h2 data-title></h2>
-             <p data-text></p>
+                <img src="" alt="">
+             <h2 class="data-title"></h2>
+             <p class="data-text"></p>
+                <p class="pris"></p>
+
              </article>
          </template>
-
-
     </main>
     <script>
         document.addEventListener("DOMContentLoaded", getJSON);
         let posts;
-        let postTemplate = document.querySelector("[data-template]");
-        let postContainer = document.querySelector("[data-container]");
+        let postTemplate = document.querySelector(".data-template");
+        let postContainer = document.querySelector(".data-container");
+
         async function getJSON() {
-            let jsonData = await fetch("http://daiana.dk/kea/eksamen2sem/wordpress/wp-json/wp/v2/produkter");
+            console.log("getJSON kørt");
+            let jsonData = await fetch("https://daiana.dk/kea/eksamen2sem/wordpress/wp-json/wp/v2/produkter");
             posts = await jsonData.json();
             visPosts();
+            console.log("getJSON kørt");
 
         }
 
@@ -38,12 +43,13 @@
             console.log(posts);
             posts.forEach(post => {
                 let klon = postTemplate.cloneNode(true).content;
-                klon.querySelector("[data-title]").textContent = post.title.rendered;
-                klon.querySelector("[data-text]").innerHTML = post.content.rendered;
+                klon.querySelector(".data-title").innerHTML = post.acf.navn;
+                klon.querySelector(".data-text").innerHTML = post.acf.produkt_info;
+                klon.querySelector("img").src = post.acf.billede;
+                klon.querySelector(".pris").innerHTML = post.acf.pris;
                 postContainer.appendChild(klon);
             })
         }
-
     </script>
 </body>
 
