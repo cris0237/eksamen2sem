@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Yantramanav:300" rel="stylesheet">
+    <link rel="stylesheet" href="om.css">
+
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"><img src="logoformat.svg" alt="logo" height="80"></a>
+
+        <br>
+        <button><a href="Smykker.html" class="btn">PRODUKTER</a></button>
+        <button><a href="om.html" class="btn">OM</a></button>
+        <button><a href="kontakt.html" class="btn">KONTAKT</a></button>
+
+    </header>
+
+    <main>
+        <br>
+        <div class="container">
+            <div class="tekst">
+                <h2>Camille Ulrikke JWRLY</h2>
+                <br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus officiis quasi labore modi ex, tempora dicta dolore, ratione fugit explicabo, dolores minima delectus, voluptas vero similique. Vel autem, numquam a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eligendi, placeat laboriosam aperiam quasi fugiat, sit eius possimus quas. Omnis numquam veritatis, velit nam doloribus magni optio recusandae earum ullam.</p>
+            </div>
+            <div class="billede"><img src="IMG_2787.JPG" alt="Camille"></div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="billede"><img src="IMG_2787.JPG" alt="Camille"></div>
+            <div class="tekst">
+                <h3>Hvem er Camille Ulrikke?</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum fuga unde omnis laboriosam dignissimos, nesciunt doloremque temporibus eius, veritatis beatae molestiae, commodi tempore. Excepturi voluptatum, quis iure cupiditate eligendi doloribus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos recusandae nihil doloremque nesciunt, perspiciatis impedit tenetur. A quisquam dolores, aperiam praesentium consequuntur, aliquid delectus vitae minus beatae adipisci vel ipsa.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="knap.svg" alt="go_to_top">TIL TOPPEN</button>
+    <footer></footer>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>
