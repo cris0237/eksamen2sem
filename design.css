@@ -2,12 +2,20 @@ img {
     width: 500px;
 }
 
+
 .data-container {
+
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
 
+}
+
+
+img {
+    border: 3px solid #FAE3D9
 }
 
 .item {
