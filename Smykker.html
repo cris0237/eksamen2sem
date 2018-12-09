@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans|Yantramanav" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Yantramanav:300" rel="stylesheet">
     <link rel="stylesheet" href="design.css">
     <title>Document</title>
 </head>
@@ -27,8 +26,8 @@
                  <a href="oreringe.html" target="_blank">
              <h2 class="data-title"></h2>
                 </a>
-             <p class="data-text"></p>
-                <p class="pris"></p>
+             <p class="data-text"></p >
+            <p class="pris "></p>
 
              </article>
 
@@ -54,7 +53,7 @@
             posts.forEach(post => {
                 let klon = postTemplate.cloneNode(true).content;
                 klon.querySelector(".data-title").innerHTML = post.acf.navn;
-                klon.querySelector(".data-text").innerHTML = post.acf.produkt_info;
+                // klon.querySelector(".data-text").innerHTML = post.acf.produkt_info;
                 klon.querySelector("img").src = post.acf.billede;
                 klon.querySelector(".pris").innerHTML = post.acf.pris;
                 postContainer.appendChild(klon);
