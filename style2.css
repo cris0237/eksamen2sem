@@ -73,9 +73,10 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(Produktbilleder/_-11.jpg);
-    height: 700px;
+    height: 600px;
     width: 100%;
 }
+
 
 
 @media only screen and (max-width: 500px) {
@@ -92,6 +93,7 @@ button {
 
 .tekst1:hover {
     opacity: 1;
+
 }
 
 .tekst1 {
@@ -168,13 +170,14 @@ button {
 
 .container3 {
     background-image: url(Produktbilleder/_-10.jpg);
-    height: 700px;
+    height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 5vw 0 0 10vw;
 }
 
 @media only screen and (max-width: 800px) {
@@ -184,16 +187,17 @@ button {
 }
 
 .billede_container {
-    padding: 3vw 5vw 20vw 5vw;
+    /*    padding: 2vw 0 20vw 0;*/
+    margin-left: 15vw;
 }
 
 .tekst3 {
-    padding: 7vw 5vw 0 1vw;
+    padding-top: 10vw;
     font-size: 1.4rem;
 }
 
 .billede_container img {
-    max-width: 70%;
+    max-width: 15vw;
 }
 
 @media only screen and (max-width: 800px) {
@@ -203,13 +207,31 @@ button {
     }
     .tekst3 {
         font-size: 1em;
-        text-align: center;
         max-width: 90%;
-        padding: 0 0 0 0;
+        padding: 0 0 0 6vw;
         margin: 0;
+    }
+    .billede_container img {
+        transform: scale(2.5);
     }
 }
 
 .container3 p {
     color: black;
+}
+
+
+.container4 {
+    background-image: url(Fardige_model_billeder/_-17.jpg);
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .container4 {
+        height: 1100px;
+    }
 }
