@@ -32,6 +32,7 @@ button {
     background: transparent;
     margin: 5px;
     font-family: 'Cormorant Garamond', serif;
+    overflow: hidden;
 }
 
 .btn {

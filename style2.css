@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration-color: black;
+    font-family: 'Yantramanav';
+}
+
+a {
+    color: black;
+}
+
+header {
+    margin-bottom: 80px;
+    text-align: center;
+    position: fixed;
+    background: #FAE3D9;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+/*@media only screen and (max-width: 500px) {
+    header img {
+        margin-bottom: -50px;
+    }
+}*/
+
+header img {
+    width: 20vw;
+}
+
+button {
+    background: transparent;
+    margin: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    color: #1b1b1b;
+}
+
+
+
+/*
+@media only screen and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 250px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .baggrundsbillede {
+        margin-top: 190px;
+    }
+}
+*/
+
+.container1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 130px;
+    background-color: red;
+    min-height: 500px;
+}
+
+/*
+
+@media only screen and (max-width: 500px) {
+    .container1 {
+        margin-top: 200px;
+    }
+}
+*/
+
+/*
+.baggrundsbillede {
+    opacity: 1;
+    -webkit-transition: opacity 2.6s;
+    -moz-transition: opacity 2.6s;
+    transition: opacity 2.6s;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Produktbilleder/_-11.jpg);
+    height: 700px;
+    width: 100%;
+}
+*/
+
+.baggrundsbillede:hover img {
+    opacity: 0.5;
+    -webkit-transition: opacity 2.6s;
+    -moz-transition: opacity 2.6s;
+    transition: opacity 2.6s;
+}
+
+.tekst1:hover {
+    opacity: 100;
+}
+
+.tekst1 {
+
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: 'Cormorant+Garamond';
+    padding: 5vw 0 5vw 0;
+    opacity: 0;
+    transition: opacity 1.6s;
+}
+
+/*
+@media only screen and (max-width: 500px) {
+    .tekst1 p {
+        color: black;
+        text-transform: uppercase;
+        font-size: 0.5em;
+        font-family: 'Cormorant+Garamond';
+    }
+    .tekst1 {
+        height: 100%;
+    }
+}
+*/
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    background: blue;
+}
+
+/*
+
+@media only screen and (max-width: 1200px) {
+    .container2 {
+        margin-top: -10px;
+    }
+}
+*/
+
+.produkter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10vw 0 10vw;
+}
+
+.produkt:hover {
+    transform: scale(1.1);
+}
+
+/*
+@media only screen and (min-width: 700px) {
+    .produkter {
+        max-width: 70%;
+    }
+}
+*/
+
+.produkt {
+    padding: 2px;
+    margin: 10px;
+}
+
+.produkt img {
+    max-width: 100%;
+}
+
+.baggrundsbillede2 {
+    /*    background-image: url(Fardige_model_billeder/_-10.jpg);*/
+    background: blue;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.baggrundsbillede3 {
+    background-image: url(Produktbilleder/_-10.jpg);
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 p {
+    color: black;
+}
+
+.container3 img {
+    max-width: 50%;
+}
