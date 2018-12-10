@@ -11,7 +11,13 @@
 
 <body>
     <header>
-        <h1>Camilla</h1>
+
+        <a href="index.html"><img src="ny_logo.png" alt="logo"></a>
+
+        <br>
+        <button><a href="Smykker.html" class="btn">PRODUKTER</a></button>
+        <button><a href="om.html" class="btn">OM</a></button>
+        <button><a href="kontakt.html" class="btn">KONTAKT</a></button>
     </header>
     <main>
         <section class="data-container"></section>
@@ -55,11 +61,10 @@
                 klon.querySelector(".data-title").innerHTML = post.acf.navn;
                 // klon.querySelector(".data-text").innerHTML = post.acf.produkt_info;
                 klon.querySelector("img").src = post.acf.billede;
-                klon.querySelector(".pris").innerHTML = post.acf.pris;
+                klon.querySelector(".pris").innerHTML = "DKK " + post.acf.pris;
                 postContainer.appendChild(klon);
             })
         }
-
     </script>
 </body>
 
