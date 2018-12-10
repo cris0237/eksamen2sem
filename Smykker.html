@@ -61,11 +61,10 @@
                 klon.querySelector(".data-title").innerHTML = post.acf.navn;
                 // klon.querySelector(".data-text").innerHTML = post.acf.produkt_info;
                 klon.querySelector("img").src = post.acf.billede;
-                klon.querySelector(".pris").innerHTML = post.acf.pris;
+                klon.querySelector(".pris").innerHTML = "DKK " + post.acf.pris;
                 postContainer.appendChild(klon);
             })
         }
-
     </script>
 </body>
 
