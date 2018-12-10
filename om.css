@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(#FAE3D9, #FAE3D9, #BBDED6);
+}
+
+header {
+    margin-bottom: 80px;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    background: #FAE3D9;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 500px) {
+    header img {
+        margin-bottom: -50px;
+    }
+}
+
+
+button {
+    padding: 10px 50px;
+    background: transparent;
+    margin: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    overflow: hidden;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    padding: 20px 20px;
+    color: #1b1b1b;
+}
+
+button {
+    border: none;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 250px;
+    }
+}
+
+a {
+    color: black;
+}
+
+main {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        margin-top: 250px;
+    }
+}
+
+img {
+    max-width: 100%;
+    ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tekst {
+    flex-basis: 800px;
+    flex-grow: 2;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.billede {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+p {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#myBtn {
+    background: "knap.svg";
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 10px;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    padding: 15px;
+    /* Some padding */
+    transform: scale(1.2);
+
+}
+
+#myBtn:hover {
+    transform: scale(1.5);
+}
