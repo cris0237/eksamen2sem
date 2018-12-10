@@ -84,26 +84,38 @@ main {
 
 img {
     max-width: 100%;
-    ;
+
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: -40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .tekst {
-    flex-basis: 800px;
-    flex-grow: 2;
     margin-bottom: 20px;
     padding: 10px;
 }
 
 .billede {
-    flex-basis: 400px;
-    flex-grow: 1;
     margin-bottom: 20px;
     padding: 10px;
+
+}
+
+h2 {
+    text-align: center;
 }
 
 p {
