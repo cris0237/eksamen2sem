@@ -63,3 +63,18 @@ a {
     margin-top: 10px;
     max-width: 100%;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .data-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+
+    @media only screen and (max-width: 300px) {
+        .data-container {
+            grid-template-columns: repeat(2, 2fr);
+
+        }
