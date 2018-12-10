@@ -13,28 +13,30 @@ img {
 
     width: 450px;
     max-width: 100%;
-
+    border: solid 2px #FAE3D9;
 
 }
+
+
+
+main {
+    margin-top: 10vw;
+}
+
 
 .data-container {
-
     display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    text-align: center;
-    max-width: 90%;
-    grid-column-gap: 100px;
-
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10vw 10vw 0 10vw;
+    column-gap: 5vw;
 }
 
-
-img {
-    border: 3px solid #FAE3D9;
-    max-width: 100%;
-
+@media only screen and (min-width: 700px) {
+    .data-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
+
 
 .item {
     background: rgba(20, 40, 80, 1);
@@ -62,4 +64,75 @@ a {
     font-family: 'Yantramanav', sans-serif;
     margin-top: 10px;
     max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+
 }
+
+h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+
+a {
+    margin-top: 4px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+header {
+    margin-bottom: 80px;
+    text-align: center;
+    position: fixed;
+    background: #FAE3D9;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+
+header img {
+    width: 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+    header img {
+        width: 50vw;
+    }
+}
+
+button {
+    background: transparent;
+    margin: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    color: #1b1b1b;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .data-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    @media only screen and (max-width: 300px) {
+        .data-container {
+            grid-template-columns: repeat(2, 2fr);
+        }

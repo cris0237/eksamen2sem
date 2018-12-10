@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration-color: black;
+    font-family: 'Yantramanav';
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    margin-bottom: 80px;
+    text-align: center;
+    position: fixed;
+    background: #FAE3D9;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+
+header img {
+    width: 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+    header img {
+        width: 50vw;
+    }
+}
+
+button {
+    background: transparent;
+    margin: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    color: #1b1b1b;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .container1 {
+        margin-top: 190px;
+    }
+}
+
+.container1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 130px;
+    min-height: 500px;
+    opacity: 1;
+    transition: opacity 2.6s;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Produktbilleder/_-11.jpg);
+    height: 700px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .container1 {
+        margin-top: 200px;
+        height: 500px;
+    }
+}
+
+.container1:hover {
+    opacity: 0.8;
+    transition: opacity 2.6s;
+}
+
+.tekst1:hover {
+    opacity: 1;
+}
+
+.tekst1 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: 'Cormorant+Garamond';
+    padding: 12vw 5vw 5vw 12vw;
+    opacity: 0;
+    transition: opacity 1.6s;
+}
+
+
+
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(Fardige_model_billeder/_-10.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .container2 {
+        height: 1000px;
+    }
+}
+
+/*
+
+@media only screen and (max-width: 1200px) {
+    .container2 {
+        margin-top: -10px;
+    }
+}
+*/
+
+.produkter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10vw 10vw 0 10vw;
+}
+
+@media only screen and (min-width: 700px) {
+    .produkter {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.produkt:hover {
+    transform: scale(1.03);
+}
+
+/*
+@media only screen and (min-width: 700px) {
+    .produkter {
+        max-width: 70%;
+    }
+}
+*/
+
+.produkt {
+    padding: 2px;
+    margin: 10px;
+}
+
+.produkt img {
+    max-width: 100%;
+}
+
+
+
+.container3 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.baggrundsbillede3 {
+    background-image: url(Produktbilleder/_-10.jpg);
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 p {
+    color: black;
+}
+
+.container3 img {
+    max-width: 50%;
+}
