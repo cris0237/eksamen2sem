@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration-color: black;
+    font-family: 'Yantramanav';
+}
+
+a {
+    color: black;
+}
+
+header {
+    margin-bottom: 80px;
+    text-align: center;
+    position: fixed;
+    background: #FAE3D9;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+header img {
+    width: 20vw;
+}
+
+button {
+    background: transparent;
+    margin: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    color: #1b1b1b;
+}
+
+.some_ikoner {
+    width: 500px;
+    height: 500px;
+}
