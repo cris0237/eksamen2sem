@@ -52,22 +52,19 @@ header img {
 button {
     background: transparent;
     margin: 15px;
-    font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
     padding: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .btn:hover {
     border: none;
-    background: rgba(0, 0, 0, 0.4);
-    background: #fff;
-    color: #1b1b1b;
+    color: white;
 }
 
 
@@ -304,7 +301,7 @@ button {
         /* Fixed/sticky position */
         bottom: -5px;
         /* Place the button at the bottom of the page */
-        right: -140px;
+        right: -90px;
         z-index: 99;
         /* Make sure it does not overlap */
         border: none;

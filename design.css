@@ -17,9 +17,17 @@ img {
 }
 
 
+H1 {
+    padding-top: 9vw;
+    text-align: center;
+    margin-bottom: -5vw;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
 
 main {
-    margin-top: 10vw;
+    margin-top: 6vw;
 
 }
 
@@ -33,7 +41,6 @@ main {
 .container img {
     margin: 0;
     padding: 0;
-    width: 85%;
 }
 
 .data-container {
@@ -67,6 +74,7 @@ main {
     margin-bottom: -5px;
     text-transform: uppercase;
     max-width: 100%;
+    margin-top: -2px;
 }
 
 a {
@@ -136,23 +144,22 @@ header img {
 button {
     background: transparent;
     margin: 15px;
-    font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
     padding: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Yantramanav', sans-serif;
 }
 
 .btn:hover {
     border: none;
-    background: rgba(0, 0, 0, 0.4);
-    background: #fff;
-    color: #1b1b1b;
+    color: white;
 }
+
 
 
 @media only screen and (max-width: 500px) {
