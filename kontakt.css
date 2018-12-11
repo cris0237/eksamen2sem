@@ -47,7 +47,7 @@ header img {
 button {
     background: transparent;
     margin: 15px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Yantramanav';
     font-size: 1.4rem;
     text-decoration: none;
     letter-spacing: 2px;
@@ -73,13 +73,11 @@ button {
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    align-content: center;
-    height: 200px;
-    flex-flow: row wrap;
-
+    height: 300px;
+    padding: 2vw;
+    margin-bottom: 2vw;
 
 
 }
@@ -87,5 +85,18 @@ button {
 
 .some_ikoner {
     display: flex;
+    text-align: center;
+    margin-top: auto;
+
+}
+
+@media screen and (max-width: 750px) {
+    .some_ikoner {
+        flex-direction: column;
+    }
+}
+
+.kontakt_container {
+    text-align: center;
 
 }
