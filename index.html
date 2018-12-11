@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camille Ulrikke Jwlry</title>
     <link rel="stylesheet" href="style2.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Yantramanav:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Yantramanav:100" rel="stylesheet">
 </head>
 
 <body>
@@ -24,13 +24,12 @@
 
 
         <div class="container1">
-            <div class="tekst1">
-                <p>JWRLY by Camille Ulrikke. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odio voluptatem fugiat blanditiis velit aperiam, repudiandae ipsa. Asperiores quam molestiae placeat iste expedita reiciendis dolore dolores vel ad, aliquid sapiente!</p>
-            </div>
         </div>
 
 
-
+        <div class="container_space">
+            <p>JWRLY by Camille Ulrikke</p>
+        </div>
 
         <div class="container2">
 
@@ -45,10 +44,8 @@
 
         <div class="container3">
             <div class="tekst3">
-                <p>JWRLY by Camille Ulrikke. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odio voluptatem fugiat blanditiis velit aperiam, repudiandae ipsa. Asperiores quam molestiae placeat iste expedita reiciendis dolore dolores vel ad, aliquid sapiente!</p>
+                <p>Dyk ind i en verden med ferskvands - og barok perler.<br> Kvalitets smykker håndlavet med omtanke.<br> Kreative designs i sølv eller guldbelagt. <br> Fuldend din stil med unikke smykker.</p>
             </div>
-            <div class="billede_container">
-                <img src="Fardige_model_billeder/_-8.jpg" alt="Njomz"></div>
 
         </div>
 
@@ -63,8 +60,34 @@
             </div>
         </div>
 
+
+        <div class="container5">
+            VIDEO
+        </div>
     </main>
     <script src=""></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="knap.svg" alt="go_to_top">TIL TOPPEN</button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 <footer>
     <div class="footer_boks">

@@ -25,14 +25,27 @@ header {
     width: 100vw;
 }
 
+@media only screen and (min-width: 600px) {
+    header {
+        height: 170px;
+    }
+}
 
 header img {
     width: 20vw;
+    margin-bottom: -15px;
 }
 
 @media only screen and (max-width: 600px) {
     header img {
         width: 50vw;
+        margin-bottom: -40px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
     }
 }
 
@@ -40,11 +53,14 @@ button {
     background: transparent;
     margin: 15px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
+    padding: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .btn:hover {
@@ -73,7 +89,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(Produktbilleder/_-11.jpg);
-    height: 600px;
+    height: 500px;
     width: 100%;
 }
 
@@ -81,8 +97,8 @@ button {
 
 @media only screen and (max-width: 500px) {
     .container1 {
-        margin-top: 200px;
-        height: 500px;
+        margin-top: 100px;
+        height: 300px;
     }
 }
 
@@ -91,6 +107,7 @@ button {
     transition: opacity 2.6s;
 }
 
+/*
 .tekst1:hover {
     opacity: 1;
 
@@ -98,14 +115,41 @@ button {
 
 .tekst1 {
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: 'Cormorant+Garamond';
-    padding: 12vw 5vw 5vw 12vw;
+    padding: 15vw 5vw 5vw 5vw;
     opacity: 0;
     transition: opacity 1.6s;
+    text-align: center;
+
 }
 
+.tekst1 p {
+    background: white;
+}
 
+@media only screen and (max-width: 500px) {
+    .tekst1 p {
+        margin-top: 160px;
+        background: white;
+        font-size: 1.3rem;
+    }
+}
+*/
+
+.container_space {
+    height: 300px;
+    background: #FAE3D9;
+    width: 100%;
+}
+
+.container_space p {
+    font-family: 'Cormorant-Garamond';
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 7vw;
+    letter-spacing: 10px;
+}
 
 
 .container2 {
@@ -169,15 +213,13 @@ button {
 
 
 .container3 {
-    background-image: url(Produktbilleder/_-10.jpg);
-    height: 450px;
+    background: #FAE3D9;
+    height: 250px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5vw 0 0 10vw;
+    padding: 1vw 1vw 0 1vw;
 }
 
 @media only screen and (max-width: 800px) {
@@ -186,19 +228,18 @@ button {
     }
 }
 
-.billede_container {
-    /*    padding: 2vw 0 20vw 0;*/
-    margin-left: 15vw;
-}
 
 .tekst3 {
-    padding-top: 10vw;
+    padding: vw;
     font-size: 1.4rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 60px;
 }
 
-.billede_container img {
-    max-width: 15vw;
-}
+
 
 @media only screen and (max-width: 800px) {
     .billede_container {
@@ -234,4 +275,42 @@ button {
     .container4 {
         height: 1100px;
     }
+}
+
+
+.container5 {
+    background: #FAE3D9;
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    #myBtn {
+        background: "knap.svg";
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: -5px;
+        /* Place the button at the bottom of the page */
+        right: -140px;
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        padding: 15px;
+        /* Some padding */
+        transform: scale(0.7);
+    }
+    #myBtn:hover {
+        transform: scale(0.8);
+    }
+
 }
