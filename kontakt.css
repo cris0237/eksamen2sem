@@ -3,6 +3,7 @@ body {
     font-family: 'Yantramanav';
     background: #FAE3D9;
 
+
 }
 
 a {
@@ -11,7 +12,9 @@ a {
 
 }
 
-p {}
+p {
+    font-weight: 600;
+}
 
 header {
     text-align: center;
@@ -67,8 +70,8 @@ button {
 }
 
 .some_ikoner img {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
 
 }
 
@@ -79,8 +82,10 @@ button {
     justify-content: space-around;
     align-items: center;
     height: 300px;
-    padding: 2vw;
     margin-bottom: 2vw;
+
+
+
 
 
 
@@ -103,8 +108,13 @@ button {
 .kontakt_container {
     text-align: center;
 
+
+
 }
 
 .kontakt_info p {
-    font-weight: 1000;
+    font-weight: 100;
+    font-size: 25px;
+    font-family: 'Cormorant-Garamond';
+    letter-spacing: 2px;
 }
