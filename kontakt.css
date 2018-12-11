@@ -8,7 +8,10 @@ body {
 a {
     color: black;
     text-decoration: none;
+
 }
+
+p {}
 
 header {
     text-align: center;
@@ -80,15 +83,16 @@ button {
     margin-bottom: 2vw;
 
 
-}
 
+}
 
 .some_ikoner {
     display: flex;
-    text-align: center;
     margin-top: auto;
+    text-align: center;
 
 }
+
 
 @media screen and (max-width: 750px) {
     .some_ikoner {
@@ -98,5 +102,11 @@ button {
 
 .kontakt_container {
     text-align: center;
+
+}
+
+.kontakt_info p {
+    font-weight: 1000;
+
 
 }
