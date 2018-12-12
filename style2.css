@@ -25,33 +25,46 @@ header {
     width: 100vw;
 }
 
+@media only screen and (min-width: 600px) {
+    header {
+        height: 170px;
+    }
+}
 
 header img {
     width: 20vw;
+    margin-bottom: -15px;
 }
 
 @media only screen and (max-width: 600px) {
     header img {
         width: 50vw;
+        margin-bottom: -40px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
     }
 }
 
 button {
     background: transparent;
     margin: 15px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .btn:hover {
     border: none;
-    background: rgba(0, 0, 0, 0.4);
-    background: #fff;
-    color: #1b1b1b;
+    color: white;
 }
 
 
@@ -73,15 +86,16 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(Produktbilleder/_-11.jpg);
-    height: 700px;
+    height: 500px;
     width: 100%;
 }
 
 
+
 @media only screen and (max-width: 500px) {
     .container1 {
-        margin-top: 200px;
-        height: 500px;
+        margin-top: 100px;
+        height: 300px;
     }
 }
 
@@ -90,25 +104,58 @@ button {
     transition: opacity 2.6s;
 }
 
+/*
 .tekst1:hover {
     opacity: 1;
+
 }
 
 .tekst1 {
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: 'Cormorant+Garamond';
-    padding: 12vw 5vw 5vw 12vw;
+    padding: 15vw 5vw 5vw 5vw;
     opacity: 0;
     transition: opacity 1.6s;
+    text-align: center;
+
+}
+
+.tekst1 p {
+    background: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .tekst1 p {
+        margin-top: 160px;
+        background: white;
+        font-size: 1.3rem;
+    }
+}
+*/
+
+.container_space {
+    height: 300px;
+    background: #FAE3D9;
+    width: 100%;
+}
+
+.container_space h1 {
+    font-family: 'Cormorant-Garamond';
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 7vw;
+    letter-spacing: 10px;
+}
+
+.container_space p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -80px;
 }
 
 
-
-
 .container2 {
-    width: 100%;
-    height: 100%;
     background-image: url(Fardige_model_billeder/_-10.jpg);
     height: 800px;
     background-attachment: fixed;
@@ -119,7 +166,7 @@ button {
 
 @media only screen and (max-width: 600px) {
     .container2 {
-        height: 1000px;
+        height: 1100px;
     }
 }
 
@@ -135,7 +182,7 @@ button {
 .produkter {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 10vw 10vw 0 10vw;
+    padding: 11vw 10vw 0 10vw;
 }
 
 @media only screen and (min-width: 700px) {
@@ -169,14 +216,57 @@ button {
 
 
 .container3 {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    background: #FAE3D9;
+    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1vw 1vw 0 1vw;
 }
 
-.baggrundsbillede3 {
-    background-image: url(Produktbilleder/_-10.jpg);
+@media only screen and (max-width: 800px) {
+    .container3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.tekst3 {
+    padding: vw;
+    font-size: 1.4rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .billede_container {
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .tekst3 {
+        font-size: 1em;
+        max-width: 90%;
+        padding: 0 0 0 6vw;
+        margin: 0;
+    }
+    .billede_container img {
+        transform: scale(2.5);
+    }
+}
+
+.container3 p {
+    color: black;
+}
+
+
+.container4 {
+    background-image: url(Fardige_model_billeder/_-17.jpg);
     height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -184,10 +274,46 @@ button {
     background-size: cover;
 }
 
-.container3 p {
-    color: black;
+@media only screen and (max-width: 600px) {
+    .container4 {
+        height: 1100px;
+    }
 }
 
-.container3 img {
-    max-width: 50%;
+
+.container5 {
+    background: #FAE3D9;
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    #myBtn {
+        background: "knap.svg";
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: -5px;
+        /* Place the button at the bottom of the page */
+        right: -90px;
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        padding: 15px;
+        /* Some padding */
+        transform: scale(0.7);
+    }
+    #myBtn:hover {
+        transform: scale(0.8);
+    }
+
 }

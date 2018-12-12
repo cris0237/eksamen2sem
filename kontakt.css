@@ -1,0 +1,120 @@
+body {
+    text-decoration-color: black;
+    font-family: 'Yantramanav';
+    background: #FAE3D9;
+
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+p {
+    font-weight: 600;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    background: #FAE3D9;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        height: 170px;
+    }
+}
+
+header img {
+    width: 20vw;
+    margin-bottom: -15px;
+}
+
+@media only screen and (max-width: 600px) {
+    header img {
+        width: 50vw;
+        margin-bottom: -40px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+}
+
+button {
+    background: transparent;
+    margin: 15px;
+    font-family: 'Yantramanav';
+    font-size: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+
+}
+
+.btn:hover {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #fff;
+    color: #1b1b1b;
+}
+
+.some_ikoner img {
+    width: 15vw;
+    height: 15vw;
+
+}
+
+.some_container {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 2vw;
+
+
+
+
+
+
+}
+
+.some_ikoner {
+    display: flex;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .some_ikoner {
+        flex-direction: column;
+    }
+}
+
+.kontakt_container {
+    text-align: center;
+
+
+
+}
+
+.kontakt_info p {
+    font-weight: 100;
+    font-size: 25px;
+    font-family: 'Cormorant-Garamond';
+    letter-spacing: 2px;
+}
