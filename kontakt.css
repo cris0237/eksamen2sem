@@ -2,6 +2,8 @@ body {
     text-decoration-color: black;
     font-family: 'Yantramanav';
     background: #FAE3D9;
+    margin-left: auto;
+    margin-right: auto;
 
 
 }
@@ -14,6 +16,10 @@ a {
 
 p {
     font-weight: 600;
+}
+
+h2 {
+    font-size: 25px;
 }
 
 header {
@@ -84,11 +90,6 @@ button {
     height: 300px;
     margin-bottom: 2vw;
 
-
-
-
-
-
 }
 
 .some_ikoner {
@@ -108,13 +109,20 @@ button {
 .kontakt_container {
     text-align: center;
 
-
-
 }
 
 .kontakt_info p {
     font-weight: 100;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Cormorant-Garamond';
     letter-spacing: 2px;
+}
+
+
+.fragt_container {
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-top: 10px;
+    padding: 10px;
+
 }
