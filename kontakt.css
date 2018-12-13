@@ -126,3 +126,91 @@ button {
     padding: 10px;
 
 }
+
+@media only screen and (min-width: 600px) {
+    #myBtn {
+        background: "knap.svg";
+
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: -5px;
+        /* Place the button at the bottom of the page */
+        right: -80px;
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        padding: 15px;
+        /* Some padding */
+        transform: scale(0.7);
+    }
+    #myBtn:hover {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #myBtn {
+        display: none;
+    }
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: #FFB6B9;
+    max-height: 10vw;
+}
+
+.footer_boks {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 1vw 5vw 0 5vw;
+}
+
+.footer_kontakt {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 1vw 5vw 0 5vw;
+}
+
+.SoMe_footer {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin-top: auto;
+
+}
+
+.SoMe_footer img {
+    width: 24vw;
+    align-items: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .SoMe_footer img {
+        width: 15vw;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .SoMe_footer img {
+        width: 8vw;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .SoMe_footer img {
+        width: 8vw;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .SoMe_footer img {
+        width: 5vw;
+    }
+}

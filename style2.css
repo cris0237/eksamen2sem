@@ -358,13 +358,13 @@ footer {
 .footer_boks {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 4vw 5vw 2vw 5vw;
+    padding: 2vw 5vw 2vw 5vw;
 }
 
 .footer_kontakt {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 4vw 5vw 2vw 5vw;
+    padding: 2vw 5vw 2vw 5vw;
 }
 
 .SoMe_footer {
@@ -403,5 +403,3 @@ footer {
         width: 5vw;
     }
 }
-
-
