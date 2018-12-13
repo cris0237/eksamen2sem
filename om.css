@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(#FAE3D9, #FAE3D9, #BBDED6);
+    background: #FAE3D9;
 }
 
 header {
@@ -16,6 +17,13 @@ header {
     left: 0;
     z-index: 10;
     width: 100vw;
+}
+
+h1 {
+    margin-top: 13vw;
+    margin-bottom: 1vw;
+    text-align: center;
+    font-family: 'Comorant+Garamond';
 }
 
 @media only screen and (min-width: 600px) {
@@ -84,7 +92,6 @@ main {
 
 img {
     max-width: 100%;
-
 }
 
 .container {
@@ -94,9 +101,11 @@ img {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border: solid white 5px;
+    border: solid white 10px;
     border-bottom: none;
     border-top: none;
+    padding: 0 5vw 2vw 5vw;
+    text-align: center;
 }
 
 @media only screen and (max-width:500px) {
@@ -107,9 +116,9 @@ img {
 
 .tekst {
     margin-bottom: 20px;
-    padding: 10px;
     font-size: 1.2rem;
     letter-spacing: 2px;
+    width: 40vw;
 }
 
 .billede {
@@ -118,12 +127,10 @@ img {
 }
 
 .billede img {
-    max-height: 500px;
+    max-height: 400px;
 }
 
 h2 {
-
-    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -135,7 +142,6 @@ h3 {
 }
 
 p {
-    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -149,7 +155,7 @@ p {
     /* Fixed/sticky position */
     bottom: 20px;
     /* Place the button at the bottom of the page */
-    right: 10px;
+    right: -70px;
     z-index: 99;
     /* Make sure it does not overlap */
     border: none;
