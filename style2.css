@@ -238,11 +238,13 @@ button {
     .container3 {
         grid-template-columns: 1fr;
         text-align: center;
+
     }
-    .tekst3 {
+    .tekst3 p {
         text-align: center;
         padding: 0;
-        margin-left: auto;
+        margin-left: 12vw;
+        width: 100%;
     }
 }
 

@@ -23,8 +23,9 @@ h2 {
 }
 
 header {
+    margin-bottom: 80px;
     text-align: center;
-    position: relative;
+    position: fixed;
     background: #FAE3D9;
     top: 0;
     left: 0;
@@ -59,20 +60,20 @@ header img {
 button {
     background: transparent;
     margin: 15px;
-    font-family: 'Yantramanav';
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
-
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Yantramanav', sans-serif;
 }
 
 .btn:hover {
     border: none;
-    background: rgba(0, 0, 0, 0.4);
-    background: #fff;
-    color: #1b1b1b;
+    color: white;
 }
 
 .some_ikoner img {
@@ -129,8 +130,7 @@ button {
 
 @media only screen and (min-width: 600px) {
     #myBtn {
-        background: "knap.svg";
-
+        background-image: url(knap.svg);
         /* Hidden by default */
         position: fixed;
         /* Fixed/sticky position */
@@ -164,22 +164,24 @@ footer {
     align-items: flex-start;
     background: #FFB6B9;
     max-height: 10vw;
+    line-height: 10px;
 }
 
 .footer_boks {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 1vw 5vw 0 5vw;
+    padding: 0vw 5vw 0 5vw;
 }
 
 .footer_kontakt {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 1vw 5vw 0 5vw;
+    padding: 0vw 5vw 0 5vw;
 }
 
 .SoMe_footer {
     flex-grow: 1;
+    flex-basis: 200px;
     flex-basis: auto;
     margin-top: auto;
 
@@ -212,5 +214,11 @@ footer {
 @media only screen and (min-width: 1280px) {
     .SoMe_footer img {
         width: 5vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        margin-top: 20vw;
     }
 }

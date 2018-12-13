@@ -17,33 +17,47 @@ header {
     width: 100vw;
 }
 
+@media only screen and (min-width: 600px) {
+    header {
+        height: 170px;
+    }
+}
 
 header img {
     width: 20vw;
+    margin-bottom: -15px;
 }
 
 @media only screen and (max-width: 600px) {
     header img {
         width: 50vw;
+        margin-bottom: -40px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
     }
 }
 
 button {
     background: transparent;
     margin: 15px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Yantramanav';
 }
 
 .btn:hover {
     border: none;
-    background: rgba(0, 0, 0, 0.4);
-    background: #fff;
-    color: #1b1b1b;
+    color: white;
 }
 
 
