@@ -60,7 +60,7 @@ img {
 }
 
 .billede {
-    margin-left: 2vw;
+    margin-left: vw;
 }
 
 .container {
@@ -81,7 +81,7 @@ img {
 p {
 
     font-size: 1.2rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
     font-family: 'Yantramanav';
 }
@@ -213,4 +213,42 @@ footer h5 {
     .SoMe_footer img {
         width: 5vw;
     }
+}
+
+
+
+@media only screen and (max-width:400px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.billede img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.50s ease;
+
+}
+
+.billede:hover {
+    transform: scale(1.5);
+}
+
+
+img {
+    max-width: 100%;
+
+}
+
+.billede img {
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 20%;
+
 }
