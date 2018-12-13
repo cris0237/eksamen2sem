@@ -48,8 +48,19 @@ button {
 
 
 img {
-    max-width: 90%;
+    max-width: 100%;
 
+}
+
+.billede img {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.billede {
+    margin-left: 2vw;
 }
 
 .container {
@@ -65,10 +76,7 @@ img {
     border-top: none;
 }
 
-.billede {
-    margin-bottom: 20px;
-    padding: 10px;
-}
+
 
 p {
 
@@ -95,12 +103,7 @@ h3 {
 
 
 
-    {
-    height: vh;
-    overflow: hidden;
-}
-
-.billede {
+.billede img {
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -110,5 +113,5 @@ h3 {
 }
 
 .billede:hover {
-    transform: scale(1.4);
+    transform: scale(1.5);
 }
