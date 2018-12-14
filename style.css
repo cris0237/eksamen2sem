@@ -231,3 +231,57 @@ button {
 .container3 img {
     max-width: 50%;
 }
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFB6B9;
+    font-family: 'Yantramanav';
+
+}
+
+.footer_boks {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 2vw 5vw 2vw 5vw;
+}
+
+.footer_kontakt {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 2vw 5vw 2vw 5vw;
+}
+
+
+
+.SoMe_footer img {
+    width: 24vw;
+    align-items: center;
+    padding-bottom: 1vw;
+}
+
+@media only screen and (min-width: 500px) {
+    .SoMe_footer img {
+        width: 15vw;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .SoMe_footer img {
+        width: 8vw;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .SoMe_footer img {
+        width: 8vw;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .SoMe_footer img {
+        width: 5vw;
+    }
+}
