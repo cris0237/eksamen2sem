@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a {
     margin-top: 4px;
     color: black;
@@ -176,6 +181,11 @@ footer {
     padding: 1vw 5vw 0 5vw;
 }
 
+footer p{
+    font-family: 'Yantramanav';
+    font-weight: 100;
+}
+
 .footer_kontakt {
     flex-grow: 1;
     flex-basis: 200px;
@@ -262,6 +272,7 @@ img {
 .billede img {
     width: 60%;
     margin-bottom: 20px;
+    margin-top: 30px;
     padding: 10px;
     margin-left: 20%;
 

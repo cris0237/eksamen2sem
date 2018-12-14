@@ -166,7 +166,12 @@ button {
     .data-container {
         grid-template-columns: repeat(1, 1fr);
     }
+    .data-container {
+        margin-top: 50%;
+    }
 }
+
+
 
 
 @media only screen and (max-width: 300px) {
@@ -210,13 +215,17 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     background: #FFB6B9;
-    max-height: 10vw;
 }
 
 .footer_boks {
     flex-grow: 1;
     flex-basis: 200px;
     padding: 1vw 5vw 0 5vw;
+}
+
+footer p{
+    font-family: 'Yantramanav';
+    font-weight: 100;
 }
 
 .footer_kontakt {
@@ -245,6 +254,7 @@ footer h5 {
 .SoMe_footer img {
     width: 24vw;
     align-items: center;
+    border: none;
 }
 
 @media only screen and (min-width: 500px) {
