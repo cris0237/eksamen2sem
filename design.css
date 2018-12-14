@@ -166,7 +166,12 @@ button {
     .data-container {
         grid-template-columns: repeat(1, 1fr);
     }
+    .data-container {
+        margin-top: 50%;
+    }
 }
+
+
 
 
 @media only screen and (max-width: 300px) {
