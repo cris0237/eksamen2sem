@@ -69,27 +69,31 @@ button {
     .billede img {
         width: 70%;
     }
-    .container{
+    .container {
         display: flex;
         flex-wrap: wrap;
         margin-top: 200px;
     }
-    .billede{
+    .billede {
         flex-basis: 300px;
         flex-grow: 1;
         margin-left: 8%;
+
     }
-    .tekst{
-         flex-basis: 300px;
+    .billede:hover {
+        transform: scale(1.1);
+    }
+    .tekst {
+        flex-basis: 300px;
         flex-grow: 1;
     }
 
-     p {
+    p {
         text-align: center;
         font-family: 'Yantramanav';
         margin-bottom: 1%;
 
-         font-size: 20px;
+        font-size: 20px;
     }
 
     h3 {
@@ -100,13 +104,13 @@ button {
         margin-top: 10%;
         font-size: 150%;
     }
-     #paypal-button-container {
+    #paypal-button-container {
         width: 100px;
-         margin-bottom: 2%;
-           margin-top: 10%;
-         margin-left:13%
-                    }
-    text{}
+        margin-bottom: 2%;
+        margin-top: 10%;
+        margin-left: 13%
+    }
+    transform {}
 
 }
 
@@ -131,14 +135,14 @@ button {
         margin-bottom: 2%;
 
     }
-     #paypal-button-container {
+    #paypal-button-container {
         width: 100px;
         margin-left: 30%;
         width: 10em;
         margin-top: 15%;
         margin-bottom: 40%;
-                    }
-   }
+    }
+}
 
 
 
@@ -189,7 +193,7 @@ footer {
     padding: 1vw 5vw 0 5vw;
 }
 
-footer p{
+footer p {
     font-family: 'Yantramanav';
     font-weight: 100;
 }
