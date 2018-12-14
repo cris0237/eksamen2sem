@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a {
     margin-top: 4px;
     color: black;
@@ -174,6 +179,11 @@ footer {
     flex-grow: 1;
     flex-basis: 200px;
     padding: 1vw 5vw 0 5vw;
+}
+
+footer p{
+    font-family: 'Yantramanav';
+    font-weight: 100;
 }
 
 .footer_kontakt {
