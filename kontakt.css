@@ -158,30 +158,29 @@ button {
     }
 }
 
+
 footer {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     background: #FFB6B9;
-    max-height: 10vw;
-    line-height: 10px;
+
 }
 
 .footer_boks {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 0vw 5vw 0 5vw;
+    padding: 2vw 5vw 2vw 5vw;
 }
 
 .footer_kontakt {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 0vw 5vw 0 5vw;
+    padding: 2vw 5vw 2vw 5vw;
 }
 
 .SoMe_footer {
     flex-grow: 1;
-    flex-basis: 200px;
     flex-basis: auto;
     margin-top: auto;
 
@@ -190,6 +189,7 @@ footer {
 .SoMe_footer img {
     width: 24vw;
     align-items: center;
+    padding-bottom: 1vw;
 }
 
 @media only screen and (min-width: 500px) {
@@ -217,8 +217,3 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    footer {
-        margin-top: 20vw;
-    }
-}

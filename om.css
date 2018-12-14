@@ -209,6 +209,7 @@ footer {
 .SoMe_footer img {
     width: 24vw;
     align-items: center;
+    padding-bottom: 1vw;
 }
 
 @media only screen and (min-width: 500px) {
