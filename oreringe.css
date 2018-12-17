@@ -67,26 +67,28 @@ button {
 
 @media only screen and (min-width: 400px) {
     .billede img {
-        width: 70%;
+        width: 100%;
+
     }
     .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 170px 100px 50px 100px;
+
+        /*
         display: flex;
         flex-wrap: wrap;
         margin-top: 200px;
+        */
     }
     .billede {
-        flex-basis: 300px;
-        flex-grow: 1;
-        margin-left: 8%;
-
+        width: 100%;
+        transition: transform 0.2s;
     }
     .billede:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
-    .tekst {
-        flex-basis: 300px;
-        flex-grow: 1;
-    }
+    .tekst {}
 
     p {
         text-align: center;
