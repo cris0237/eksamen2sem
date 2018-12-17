@@ -240,32 +240,61 @@ footer {
     flex-wrap: wrap;
     background: #FFB6B9;
     font-family: 'Yantramanav';
-
+    max-height: auto;
+    align-content: center;
+    padding: 1vw 5vw 0 5vw;
 }
 
+footer p {
+    font-size: 14px;
+}
 .footer_boks {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 2vw 5vw 2vw 5vw;
+    margin-right: -10vw;
 }
 
 .footer_kontakt {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 2vw 5vw 2vw 5vw;
+   margin-right: -15vw;
 }
 
+.SoMe_footer {
+    flex-grow: 1;
+    flex-basis: auto;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    flex-basis: 200px;
 
+}
+
+@media only screen and (max-width: 500px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_boks{
+        max-height: 100px;
+    }
+    .footer_kontakt{
+        max-height: 100px;
+    }
+    .SoMe_footer{
+        max-height: 100px;
+    }
+}
 
 .SoMe_footer img {
-    width: 24vw;
-    align-items: center;
-    padding-bottom: 1vw;
+    max-width: 10%;
+    align-items: flex-end;
+    margin-top: -9px;
+
 }
 
 @media only screen and (min-width: 500px) {
     .SoMe_footer img {
-        width: 15vw;
+        width: 11vw;
     }
 }
 
