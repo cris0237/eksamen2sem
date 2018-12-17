@@ -71,7 +71,6 @@ button {
     color: white;
 }
 
-
 h2 {
     margin-top: 18vw;
     margin-bottom: 1vw;
@@ -80,9 +79,10 @@ h2 {
 }
 h3 {
     font-size: 25px;
-
 }
-
+p {
+    font-size: 20px;
+}
 .some_ikoner img {
     width: 15vw;
     height: 15vw;
