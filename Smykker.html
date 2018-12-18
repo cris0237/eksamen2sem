@@ -14,10 +14,17 @@
 
         <a href="index.html"><img src="ny_logo.png" alt="logo"></a>
 
-        <br>
-<a href="Smykker.html" class="btn"><button>PRODUKTER</button></a>
-<a href="om.html" class="btn"><button>OM</button></a>
-<a href="kontakt.html" class="btn"><button>KONTAKT</button></a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="om.html">OM</a>
+            <a href="Smykker.html">PRODUKTER</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <img src="search.svg" alt="search_bar">
+        </div>
+        <h6><span class="menu_streg" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+    </span> </h6>
+        <!--<div class="search"><img src="search.svg" alt="search_bar"></div> <br>-->
+        <div class="shopping"><img src="shopping-cart.svg" alt="shopping_cart" width="1vw"></div>
     </header>
     <main>
         <div class="container">
@@ -105,6 +112,15 @@
                 postContainer.appendChild(klon);
             })
         }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
     </script>
 </body>
 

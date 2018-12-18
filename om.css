@@ -19,34 +19,159 @@ header {
     width: 100vw;
 }
 
-h1 {
-    margin-top: 13vw;
-    margin-bottom: 1vw;
-    text-align: center;
-    font-family: 'Comorant+Garamond';
+button {
+    background-color: #FAE3D9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1em;
+    border-left: 5px;
+    border-right: 5px;
+}
+
+h6 {
+    position: fixed;
+    padding: 20px;
+    left: 10px;
+    top: 5px;
+    font-size: 1.6rem;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 227, 217, 0.81);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.sidenav a {
+    padding: 30px 8px 30px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #C09F37;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#mysidenav {
+    text-align: left;
+}
+
+.sidenav {
+    text-align: left;
+}
+
+.menu-item {
+    max-width: 90px;
+    font-size: 0.9em;
 }
 
 @media only screen and (min-width: 600px) {
     header {
-        height: 170px;
+        height: 110px;
     }
+    .sidenav img {
+        max-width: 2vw;
+        margin-left: 2vw;
+        margin-top: 2vw;
+    }
+    .shopping img {
+        max-width: 2vw;
+    }
+    .shopping {
+        margin-left: 94vw;
+        margin-top: -7.5vw;
+    }
+
+    /*    .search img{
+    max-width: 3vw;
 }
 
+.search{
+    margin-left: 80vw;
+    margin-top: 1vw;
+}*/
+}
+
+
 header img {
-    width: 20vw;
-    margin-bottom: -15px;
+    width: 30vw;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 600px) {
     header img {
-        width: 50vw;
+        width: 70vw;
         margin-bottom: -40px;
+        margin-top: 0.1px;
     }
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.1rem;
+        height: 100px;
+    }
+    h6 {
+        transform: scale(0.9);
+        left: 0;
+        margin-top: -4vw;
+    }
+    .sidenav {
+        height: 400px;
+    }
+    .menu_tekst {
+        display: none;
+    }
+    .shopping img {
+        max-width: 26px;
+    }
+    .shopping {
+        margin-left: 85vw;
+        margin-top: -21.4vw;
+    }
+    .sidenav img {
+        max-width: 8vw;
+        margin-left: 8vw;
+    }
+    h1 {
+        margin-top: 100px;
     }
 }
 
@@ -70,6 +195,7 @@ button {
 }
 
 
+
 a {
     color: black;
     text-decoration-line: none;
@@ -86,12 +212,13 @@ main {
 
 @media only screen and (max-width: 500px) {
     main {
-        margin-top: 250px;
+        margin-top: 91px;
     }
 }
 
-img {
-    max-width: 100%;
+h1 {
+    text-align: center;
+    font-family: 'Garamont', serif;
 }
 
 .container {
@@ -108,9 +235,11 @@ img {
     text-align: center;
 }
 
+
 @media only screen and (max-width:500px) {
     .container {
         grid-template-columns: 1fr;
+        border: none;
     }
 }
 
@@ -118,7 +247,7 @@ img {
     margin-bottom: 20px;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    width: 40vw;
+    text-align: left;
 }
 
 .billede {
@@ -149,8 +278,7 @@ p {
 
 @media only screen and (min-width: 600px) {
     #myBtn {
-        background: "knap.svg";
-
+        background-image: "knap.svg";
         /* Hidden by default */
         position: fixed;
         /* Fixed/sticky position */
@@ -178,72 +306,15 @@ p {
     }
 }
 
-footer {
-    background: #FFB6B9;
-    font-family: 'Yantramanav';
-    max-height: auto;
-    align-content: center;
-    padding: 1vw 5vw 0 5vw;
-}
-
-.footer_container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-.footer_boks {
-    flex-grow: 1;
-    flex-basis: 200px;
-    margin-right: -10vw;
-}
-
-.footer_kontakt {
-    flex-grow: 1;
-    flex-basis: 200px;
-    margin-right: -15vw;
-}
-
-.SoMe_footer {
-    flex-grow: 1;
-    flex-basis: auto;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    flex-basis: 200px;
-    max-width: 250px;
-}
-
-@media only screen and (max-width: 500px) {
-    footer_container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer_boks {
-        max-height: 100px;
-    }
-    .footer_kontakt {
-        max-height: 100px;
-    }
-    .SoMe_footer {
-        max-height: 100px;
-    }
-    .SoMe_footer img {
-        max-width: 10px;
-    }
-}
 
 .SoMe_footer img {
-    max-width: 40%;
+    max-width: 15%;
     align-items: flex-end;
     margin-top: -9px;
 
 }
+
+
 
 @media only screen and (min-width: 500px) {
     .SoMe_footer img {
@@ -266,6 +337,57 @@ footer p {
 
 @media only screen and (min-width: 1280px) {
     .SoMe_footer img {
-        width: 5vw;
+        width: 10vw;
+    }
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
+    justify-content: center;
+    font-family: 'Yantramanav', sans-serif;
+    background: #FFB6B9;
+}
+
+footer h5 {
+    font-family: 'Garamont', serif;
+}
+
+.footer_boks {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.footer_kontakt {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.SoMe_footer {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.SoMe_footer {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_boks {
+        margin-bottom: 5vw;
+    }
+    .footer_kontakt {
+        margin-bottom: 5vw;
     }
 }

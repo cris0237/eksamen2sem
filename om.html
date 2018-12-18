@@ -13,12 +13,19 @@
 <body>
     <header>
 
-        <a href="index.html"><img src="logoformat.svg" alt="logo" height="80"></a>
+        <a href="index.html"><img src="logoformat.svg" alt="logo"></a>
 
-        <br>
-        <button><a href="Smykker.html" class="btn">PRODUKTER</a></button>
-        <button><a href="om.html" class="btn">OM</a></button>
-        <button><a href="kontakt.html" class="btn">KONTAKT</a></button>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="om.html">OM</a>
+            <a href="Smykker.html">PRODUKTER</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <img src="search.svg" alt="search_bar">
+        </div>
+        <h6><span class="menu_streg" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+    </span> </h6>
+        <!--<div class="search"><img src="search.svg" alt="search_bar"></div> <br>-->
+        <div class="shopping"><img src="shopping-cart.svg" alt="shopping_cart"></div>
 
     </header>
 
@@ -49,26 +56,26 @@
 
     </main>
     <footer>
-        <div class="footer_container">
-            <div class="footer_boks">
-                <h5>LEVERING &amp; FRAGT</h5>
-                <p>Alle pakker leveres med DAO. </p>
-                <p>Fragt 30DKK.</p>
-            </div>
 
-            <div class="footer_kontakt">
-                <h5>KONTAKT</h5>
-                <p>email@email.com</p>
-                <p>+ 45 55 55 33 33</p>
-            </div>
-
-            <div class="SoMe_footer">
-                <a href="https://www.instagram.com/camilleulrikke.jwlry/"><img src="ikoner/camille_ulrikke_some_ikon_1.png" alt="instagram_icon"></a>
-                <a href="https://www.instagram.com/camille.ulrikke/"><img src="ikoner/camille_ulrikke_some_ikon_2.png" ></a>
-                <a href="https://www.instagram.com/camille.ulrikke/"><img src="ikoner/camille_ulrikke_some_ikon_3.png" ></a>
-
-            </div>
+        <div class="footer_boks">
+            <h5>LEVERING &amp; FRAGT</h5>
+            <p>Alle pakker leveres med DAO. </p>
+            <p>Fragt 30DKK.</p>
         </div>
+
+        <div class="footer_kontakt">
+            <h5>KONTAKT</h5>
+            <p>email@email.com</p>
+            <p>+ 45 55 55 33 33</p>
+        </div>
+
+        <div class="SoMe_footer">
+            <a href="https://www.instagram.com/camilleulrikke.jwlry/"><img src="ikoner/camille_ulrikke_some_ikon_1.png" alt="instagram_icon"></a>
+            <a href="https://www.instagram.com/camille.ulrikke/"><img src="ikoner/camille_ulrikke_some_ikon_2.png" alt="icon"></a>
+            <a href="https://www.instagram.com/camille.ulrikke/"><img src="ikoner/camille_ulrikke_some_ikon_3.png" alt="icon"></a>
+
+        </div>
+
     </footer>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="knap.svg" alt="go_to_top">TIL TOPPEN</button>
     <footer></footer>
@@ -93,6 +100,13 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
 </body>
 

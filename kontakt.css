@@ -28,27 +28,159 @@ header {
     width: 100vw;
 }
 
-@media only screen and (min-width: 600px) {
-    header {
-        height: 170px;
+button {
+    background-color: #FAE3D9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1em;
+    border-left: 5px;
+    border-right: 5px;
+}
+
+h6 {
+    position: fixed;
+    padding: 20px;
+    left: 10px;
+    top: 5px;
+    font-size: 1.6rem;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 227, 217, 0.81);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.sidenav a {
+    padding: 30px 8px 30px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #C09F37;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
     }
 }
 
+#mysidenav {
+    text-align: left;
+}
+
+.sidenav {
+    text-align: left;
+}
+
+.menu-item {
+    max-width: 90px;
+    font-size: 0.9em;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        height: 110px;
+    }
+    .sidenav img {
+        max-width: 2vw;
+        margin-left: 2vw;
+        margin-top: 2vw;
+    }
+    .shopping img {
+        max-width: 2vw;
+    }
+    .shopping {
+        margin-left: 94vw;
+        margin-top: -7.5vw;
+    }
+
+    /*    .search img{
+    max-width: 3vw;
+}
+
+.search{
+    margin-left: 80vw;
+    margin-top: 1vw;
+}*/
+}
+
+
 header img {
-    width: 20vw;
-    margin-bottom: -15px;
+    width: 30vw;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 600px) {
     header img {
-        width: 50vw;
+        width: 70vw;
         margin-bottom: -40px;
+        margin-top: 0.1px;
     }
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.1rem;
+        height: 100px;
+    }
+    h6 {
+        transform: scale(0.9);
+        left: 0;
+        margin-top: -4vw;
+    }
+    .sidenav {
+        height: 400px;
+    }
+    .menu_tekst {
+        display: none;
+    }
+    .shopping img {
+        max-width: 26px;
+    }
+    .shopping {
+        margin-left: 85vw;
+        margin-top: -21.4vw;
+    }
+    .sidenav img {
+        max-width: 8vw;
+        margin-left: 8vw;
+    }
+    h1 {
+        margin-top: 100px;
     }
 }
 
@@ -63,7 +195,7 @@ button {
     padding: 0px;
     margin-left: 5%;
     margin-right: 5%;
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'Yantramanav';
 }
 
 .btn:hover {
@@ -77,12 +209,15 @@ h2 {
     text-align: center;
     font-family: 'Comorant+Garamond';
 }
+
 h3 {
     font-size: 25px;
 }
+
 p {
     font-size: 20px;
 }
+
 .some_ikoner img {
     width: 15vw;
     height: 15vw;
@@ -118,7 +253,7 @@ p {
     margin-bottom: 5%;
     padding: 10px;
     flex-wrap: wrap;
-     width: 70%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     border: solid white 10px;
@@ -127,17 +262,23 @@ p {
     padding: 0 5vw 2vw 5vw;
 }
 
+@media only screen and (max-width: 500px) {
+    .kontakt_container {
+        border: none;
+    }
+    .some_container {
+        border: none;
+    }
+}
 
 form {
     max-width: 50%;
     margin: auto;
-    background-color: white;
+
     padding: 2%;
     margin-top: 1%;
     height: 100%;
     margin-bottom: 5%;
-
-
 }
 
 input {
@@ -167,6 +308,7 @@ input[type=email] {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type=tekst] {
     width: 100%;
     padding: 122px 20px;
@@ -177,14 +319,21 @@ input[type=tekst] {
     box-sizing: border-box;
 
 }
+
 input[type=submit] {
-    background-color: orange;
+    background-color: #C09F37;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 22px 2px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    form {
+        max-width: 90%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -217,69 +366,23 @@ input[type=submit] {
     }
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    background: #FFB6B9;
-    <<<<<<< HEAD=======
-}
-
-footer p {
-    > > > > > > > origin/master font-family: 'Yantramanav';
-    max-height: auto;
-    align-content: center;
-    padding: 1vw 5vw 0 5vw;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-.footer_boks {
-    flex-grow: 1;
-    flex-basis: 200px;
-    margin-right: -10vw;
-}
-
-.footer_kontakt {
-    flex-grow: 1;
-    flex-basis: 200px;
-    margin-right: -15vw;
-}
-
-.SoMe_footer {
-    flex-grow: 1;
-    flex-basis: auto;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    flex-basis: 200px;
-
-}
-
-@media only screen and (max-width: 500px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer_boks {
-        max-height: 100px;
-    }
-    .footer_kontakt {
-        max-height: 100px;
-    }
-    .SoMe_footer {
-        max-height: 100px;
+@media only screen and (max-width: 600px) {
+    #myBtn {
+        display: none;
     }
 }
+
 
 .SoMe_footer img {
-    max-width: 10%;
+    max-width: 15%;
     align-items: flex-end;
     margin-top: -9px;
 
 }
 
-@media only screen and (min-width: 400px) {
+
+
+@media only screen and (min-width: 500px) {
     .SoMe_footer img {
         width: 11vw;
     }
@@ -300,6 +403,66 @@ footer p {
 
 @media only screen and (min-width: 1280px) {
     .SoMe_footer img {
-        width: 5vw;
+        width: 10vw;
+    }
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
+    justify-content: center;
+    font-family: 'Yantramanav', sans-serif;
+    background: #FFB6B9;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer h5 {
+    font-family: 'Garamont', serif;
+}
+
+.footer_boks {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+
+}
+
+.footer_kontakt {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.SoMe_footer {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.SoMe_footer {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_boks {
+        margin-bottom: 5vw;
+        margin-top: 2vw;
+    }
+    .footer_kontakt {
+        margin-bottom: 5vw;
+    }
+    p {
+        font-size: 1em;
     }
 }

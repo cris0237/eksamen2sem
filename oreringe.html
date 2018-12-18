@@ -8,17 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Yantramanav:100" rel="stylesheet">
     <title>PRODUKT</title>
 </head>
-<header>
-
-    <a href="index.html"><img src="ny_logo.png" alt="logo"></a>
-
-    <br>
-    <button><a href="Smykker.html" class="btn">PRODUKTER</a></button>
-    <button><a href="om.html" class="btn">OM</a></button>
-    <button><a href="kontakt.html" class="btn">KONTAKT</a></button>
-</header>
 
 <body>
+    <header>
+
+        <a href="index.html"><img src="ny_logo.png" alt="logo"></a>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="om.html">OM</a>
+            <a href="Smykker.html">PRODUKTER</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <img src="search.svg" alt="search_bar">
+        </div>
+        <h6><span class="menu_streg" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+    </span> </h6>
+        <!--<div class="search"><img src="search.svg" alt="search_bar"></div> <br>-->
+        <div class="shopping"><img src="shopping-cart.svg" alt="shopping_cart"></div>
+    </header>
 
     <br>
     <div class="container">
@@ -33,6 +40,7 @@
 
             <P> SORTBLÅ </P>
             <P>BAROKPERLER</P>
+            <p>350DKK</p>
 
 
         </div>
@@ -76,6 +84,14 @@
         function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
 
