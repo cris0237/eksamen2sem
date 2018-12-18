@@ -278,7 +278,7 @@ p {
 
 @media only screen and (min-width: 600px) {
     #myBtn {
-        background-image: "knap.svg";
+        background-image: url(knap.svg);
         /* Hidden by default */
         position: fixed;
         /* Fixed/sticky position */
